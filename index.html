@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Front-And Developer | Kailane R.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@92.1,300&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon"  href="./icon.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f2f2f2, #e9bcc6);
+        }
+         .home {
+          padding-top: 5px; 
+    background: no-repeat;
+    background-image: url(./fundo\ .jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    z-index: 9;
+    height: 100vh;  
+ 
+}
+ 
+ 
+section {
+  background: linear-gradient(to bottom, #f2f2f2, #e9bcc6);
+}
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+       
+::-webkit-scrollbar {
+  width: 12px;  
+  height: 12px; 
+}
+ 
+::-webkit-scrollbar-track {
+  background:  #e9bcc6; 
+  border-radius: 10px;  
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #6e2a3c;  
+  border-radius: 10px; 
+  border: 3px solid #f0f0f0;  
+}
+
+ 
+
+        
+       
+.navbar-nav {
+    margin-left: 75%;;
+    
+    
+
+}
+.navbar-nav .nav-item .nav-link {
+  color: #6e2a3c !important; 
+    font-weight: bold;
+    
+   
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f2f2f2 !important; 
+
+    
+}
+
+
+        
+        .custom-navbar {
+          font-family: "Playfair Display";
+            border-radius: 15px; 
+            max-width: 90%; 
+            margin: 10px auto;  
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(9px);
+        }
+
+        
+     h4 {
+    font-family: "Playfair Display";
+    color: aliceblue;
+    width: 400px;
+    height: 450px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 100px; 
+    padding-bottom: 150px; 
+    border-radius: 8px;
+    backdrop-filter: blur(9px);
+    position: relative;
+    margin-top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-image {
+  display: block;
+  margin-left: 30%;
+  margin-right: auto;
+  position: absolute;
+  z-index: 2;
+  
+}
+
+
+h3 {
+    font-family: "Playfair Display";
+    font-size: 70%;
+    width: 100px;
+    margin-left: 50%;
+    margin-top: 13%;
+    padding-top: 1%;
+    position: absolute;
+    font-weight: bold;
+    color: #6e2a3c;
+    z-index: 999 !important;
+  
+}
+
+ 
+.accordion-button {
+  color: #6e2a3c !important;
+  font-family: "Playfair Display";
+}
+
+
+.accordion-body {
+  color: #6e2a3c;
+}
+ 
+ 
+.accordion-button:focus,
+.accordion-button:active {
+    background-color:#e9bcc6;  
+    color: #ffffff;  
+    border-color:#e9bcc6  
+}
+ 
+.accordion-button:not(.collapsed) {
+    background-color:#e9bcc6;  
+    color: #ffffff;  
+}
+
+
+       .menu-bolinha {
+        display: flex;
+         flex-direction: column;  
+        position: fixed;  
+        top: 50%;  
+        right: 5%;  
+         transform: translateY(-50%);  
+         z-index: 999;  
+           }
+
+.bolinha {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin: 5px 0; 
+  border: none;
+  cursor: pointer;
+}
+
+.bolinha:hover {
+  background-color: #c56b81;
+}
+    </style>
+
+<style> 
+
+/* tablets*/
+@media (max-width: 1024px) and (min-width: 768px) {
+    .row{
+   
+   flex-wrap: wrap;
+   overflow-x: auto;
+   width: 900px;
+   margin-left: -5%;
+   place-items: center;
+   
+ }
+ .menu-bolinha{
+   
+   left: 970px;
+  
+  }
+  }
+</style>
+  
+    <style>
+    
+
+@media (max-width: 425px) {
+ 
+  .descricao h1 {
+    position: absolute;
+    font-size: 23px; 
+    margin-top: 80%;
+    margin-left: -10%;
+    
+    
+  }
+  
+  h3{
+    margin-left: 35%;
+    margin-top: 10%;
+    position: absolute; 
+ 
+  }
+
+  h4 {
+   
+    width: 80%; 
+    height: 500px; 
+    font-size: 14px; 
+    padding-top: 150px;
+    margin-top: 70%;
+    position: absolute; 
+  }
+
+  .navbar-nav {
+    margin-left: 5%;;
+  
+}
+
+  /*//*/
+
+ .col {
+  width: 250px;
+  height: 180px;
+ }
+ 
+  .row{
+   
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .card-body h5 {
+      font-size: 15px;
+  }
+  .card-body p {
+    display: none;
+  }
+  .card-body a{
+    width: 100%;
+    height: 25px;
+    text-align: center; 
+    font-size: 13px;
+    padding-top: 2px; 
+    
+  }
+
+  .card-footer span {
+    display: none;
+  }
+  .accordion {
+  width: 200%;  
+  position: relative;  
+  left: 50%; 
+  transform: translateX(-50%);  
+}
+
+}
+</style>
+   
+</head>
+<body>
+
+    
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">LaneSea</a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#projetos">PROJETOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contato">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+ 
+    <section id="home" style="height: 100vh; padding: 100px;" class="home">
+  
+     
+      <div class="descricao">
+         <h3>FRONT-AND DEVELOPER </h3>
+        <h4 class="sobremim"> 
+        Desenvolvedora front-end 
+        com conhecimentos em HTML, CSS e JavaScript, atualmente estudando back-end. Estou cursando Análise e Desenvolvimento de Sistemas (ADS) e sempre buscando aprender mais para criar projetos completos e eficientes.</h4>
+      </div>
+      
+    </section>
+
+    <section id="projetos" style="height: 100vh; padding: 100px;" >
+  <div id="projetos-section" >
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+  <div class="col">
+    <div class="card h-100">
+      <img src="./HoraDeAventura.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hora de Aventura</h5>
+        <p class="card-text">um jogo simples e interativo visando o estudo em JavaScript para o melhor dominio de funçoes e comandos.</p>
+            <a href="https://lanssea.github.io/ADVENTURE-TIME/" class="btn btn-primary" >confira aqui</a>
+      </div>
+      <div class="card-footer">
+       <span class="badge text-bg-warning">JavaScript</span>
+       <span class="badge text-bg-primary">CSS</span>
+       <span class="badge text-bg-danger">HTML</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./MedidordeClima.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Medidor de Clima</h5>
+        <p class="card-text">medidor de clima com funcionalidade em diferentes cidades, utilizandos API'S E JavaScript.</p>
+            <a href="https://lanssea.github.io/MEDIDOR-DE-CLIMA/" class="btn btn-primary" >confira aqui</a>
+      </div>
+      <div class="card-footer">
+       <span class="badge text-bg-warning">JavaScript</span>
+       <span class="badge text-bg-primary">CSS</span>
+       <span class="badge text-bg-danger">HTML</span>
+       <span class="badge text-bg-primary">API</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./StudioGhibli.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Studio Ghibli - Movies</h5>
+        <p class="card-text">A página apresenta uma coleção de filmes do renomado Studio Ghibli, oferecendo uma visão clara e atraente de suas obras mais icônicas.</p>
+            <a href=" https://lanssea.github.io/STUDIO-GHIBLI-PROJETO-FILMES/" class="btn btn-primary" >confira aqui</a>
+      </div>
+      <div class="card-footer">
+       <span class="badge text-bg-warning">JavaScript</span>
+       <span class="badge text-bg-primary">CSS</span>
+       <span class="badge text-bg-danger">HTML</span>
+   
+      </div>
+    </div>
+  </div>
+    
+</div>
+  </div>
+   <div class="menu-bolinha">
+      <button onclick="mostrarConteudo(0)" class="bolinha"></button> 
+      <button onclick="mostrarConteudo(1)" class="bolinha"></button> 
+       <button onclick="mostrarConteudo(2)" class="bolinha"></button>   
+    </div>
+
+ <div
+ class="outros" style="display: none;">
+  
+<div   class="row row-cols-1 row-cols-md-3 g-4" id="projetos-section" >
+  <div class="col">
+      <div class="card h-100">
+      <img src="./OnePiece.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">One Piece - Personagens</h5>
+        <p class="card-text">Esse projeto exibe uma seleção interativa de personagens, permitindo aos visitantes conhecer os heróis forma simples e visual.</p>
+            <a href=" https://lanssea.github.io/ONE-PIECE-PERSONAGENS-/" class="btn btn-primary" >confira aqui</a>
+      </div>
+      <div class="card-footer">
+       <span class="badge text-bg-warning">JavaScript</span>
+       <span class="badge text-bg-primary">CSS</span>
+       <span class="badge text-bg-danger">HTML</span>
+   
+      </div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card h-100">
+      <img src="./PokeDev.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Projeto PokeDev</h5>
+        <p class="card-text"> É uma apresentação de personagens inspirados no universo Pokémon, destacando um design visual dinâmico e interativo com base na temática dos jogos e personagens da franquia.</p>
+            <a href="https://lanssea.github.io/PROJETO-POKEDEVS/" class="btn btn-primary" >confira aqui</a>
+      </div>
+      <div class="card-footer">
+       <span class="badge text-bg-warning">JavaScript</span>
+       <span class="badge text-bg-primary">CSS</span>
+       <span class="badge text-bg-danger">HTML</span>
+   
+      </div>
+    </div>
+  </div>
+</div>
+ 
+    </section>
+    <section id="contato" style="height: 100vh; padding: 100px;">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+             <strong>   Midias</strong>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>🖂 E-MAIL:</strong>Kailanefreitas892@gmail.com
+             
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              <strong> Github</strong>  
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>GitHub</strong>    é uma plataforma de hospedagem de código-fonte e controle de versão que permite desenvolvedores colaborarem em projetos de forma eficiente. Você pode acessar meus projetos no GitHub clicando aqui, onde compartilho algumas das minhas criações, ideias e soluções técnicas. 
+              <p>
+                <strong><a href="https://github.com/lanssea" style="text-decoration: none; color: inherit;">Você pode conferir meu Github aqui.</a></strong>
+               </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <strong>Linkdin</strong> 
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Linkdin</strong> 
+               é a rede social profissional ideal para conectar-se com pessoas, empresas e oportunidades da sua área. Explore meu perfil e conheça mais sobre minhas experiências e projetos.
+               <p>
+                <strong><a href="https://www.linkedin.com/in/lansea" style="text-decoration: none; color: inherit;">você pode conferir meu Linkdin aqui.</a></strong>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+    // Inicializa o menu como oculto assim que a página for carregada
+document.addEventListener('DOMContentLoaded', function() {
+    var menuBolinha = document.querySelector('.menu-bolinha');
+    menuBolinha.style.display = 'none';  // Inicializa como oculto
+});
+
+// Verifica se a seção 'projetos' está visível durante o scroll
+document.addEventListener('scroll', function() {
+    var sectionProjetos = document.getElementById('projetos');
+    var menuBolinha = document.querySelector('.menu-bolinha');
+
+    var rect = sectionProjetos.getBoundingClientRect(); // Pega as coordenadas da seção de projetos
+    
+    // Verifica se a seção de projetos está visível na tela
+    if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
+        menuBolinha.style.display = 'flex'; // Mostra o menu de bolinhas
+    } else {
+        menuBolinha.style.display = 'none'; // Esconde o menu de bolinhas quando fora da seção
+    }
+});
+
+function mostrarConteudo(index) {
+    // Pega as seções de "projetos" e "outros"
+    var projetosSection = document.getElementById('projetos-section');
+    var outrosSection = document.querySelector('.outros');
+
+    if (index === 1) {  // Quando clicado na bolinha 2
+        // Esconde a seção de projetos
+        projetosSection.style.display = 'none';
+
+        // Mostra a seção "outros"
+        outrosSection.style.display = 'block';
+    } else {
+        // Caso você queira esconder "outros" e mostrar "projetos" novamente, pode adicionar um bloco aqui
+        projetosSection.style.display = 'block';
+        outrosSection.style.display = 'none';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Exibe a primeira seção (projetos) por padrão
+    mostrarConteudo(0);
+
+    // Adiciona ouvintes de clique nas bolinhas
+    var bolinhas = document.querySelectorAll('.bolinha');
+    bolinhas[0].addEventListener('click', function() { mostrarConteudo(0); });
+    bolinhas[1].addEventListener('click', function() { mostrarConteudo(1); });
+});
+
+// Ajustando o fundo parallax com base no scroll
+window.addEventListener('scroll', function() {
+    const homeSection = document.querySelector('.home');
+    const offset = window.pageYOffset;
+    homeSection.style.backgroundPositionY = offset * 0.5 + 'px'; // O "0.5" pode ser ajustado para a velocidade desejada
+});
+
+    </script>
+</body>
+</html>
