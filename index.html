@@ -542,54 +542,53 @@ h3 {
     <script>
    document.addEventListener('DOMContentLoaded', function() {var menuBolinha = document.querySelector('.menu-bolinha');menuBolinha.style.display = 'none';   });
 
-// Verifica se a seção 'projetos' está visível durante o scroll
+ 
 document.addEventListener('scroll', function() {
     var sectionProjetos = document.getElementById('projetos');
     var menuBolinha = document.querySelector('.menu-bolinha');
 
-    var rect = sectionProjetos.getBoundingClientRect(); // Pega as coordenadas da seção de projetos
+    var rect = sectionProjetos.getBoundingClientRect();  
     
-    // Verifica se a seção de projetos está visível na tela
     if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
-        menuBolinha.style.display = 'flex'; // Mostra o menu de bolinhas
+        menuBolinha.style.display = 'flex';  
     } else {
-        menuBolinha.style.display = 'none'; // Esconde o menu de bolinhas quando fora da seção
+        menuBolinha.style.display = 'none'; 
     }
 });
 
 function mostrarConteudo(index) {
-    // Pega as seções de "projetos" e "outros"
+   
     var projetosSection = document.getElementById('projetos-section');
     var outrosSection = document.querySelector('.outros');
 
     if (index === 1) {  // Quando clicado na bolinha 2
-        // Esconde a seção de projetos
+ 
         projetosSection.style.display = 'none';
 
-        // Mostra a seção "outros"
+         
         outrosSection.style.display = 'block';
     } else {
-        // Caso você queira esconder "outros" e mostrar "projetos" novamente, pode adicionar um bloco aqui
+        
         projetosSection.style.display = 'block';
         outrosSection.style.display = 'none';
     }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Exibe a primeira seção (projetos) por padrão
+    
     mostrarConteudo(0);
 
-    // Adiciona ouvintes de clique nas bolinhas
+   
     var bolinhas = document.querySelectorAll('.bolinha');
     bolinhas[0].addEventListener('click', function() { mostrarConteudo(0); });
     bolinhas[1].addEventListener('click', function() { mostrarConteudo(1); });
 });
 
-// Ajustando o fundo parallax com base no scroll
+ 
 window.addEventListener('scroll', function() {
     const homeSection = document.querySelector('.home');
     const offset = window.pageYOffset;
-    homeSection.style.backgroundPositionY = offset * 0.5 + 'px'; // O "0.5" pode ser ajustado para a velocidade desejada
+    homeSection.style.backgroundPositionY = offset * 0.5 + 'px'; / 
 });
 
     </script>
